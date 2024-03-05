@@ -1,0 +1,128 @@
+:root{
+    --dark-text: #261106;
+    --light-text: #FDE2B9;
+    --bg-beige: #c0ab86;
+    --bg-green-gradient-down: linear-gradient(180deg, #89874A, #5C603E);
+    --bg-green-gradient-up: linear-gradient(0deg, #89874A, #5C603E);
+    --bg-green-solid: #89874A;
+    --orange: #E19338;
+    --light-beige: #FFFDEC;
+    --bg-beige-gradient: linear-gradient(180deg, #c0ab86, #E1A763);
+
+}
+
+body {
+    background-color: var(--bg-beige);    
+    font-family: 'Times New Roman', serif;
+    color: var(--dark-text);
+    font-size: 18px;
+}
+
+.center {
+    text-align: center;
+}
+
+.header-info {
+    margin: 15px 0px;
+}
+
+.header-info a {
+    color: var(--dark-text);
+    text-decoration: none;
+    float: right;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.title__content{
+    display: flex;
+}
+
+.title__content-text {
+    margin-top: 15px;
+}
+
+.title__content-img img {
+    width: 80%;
+}
+
+.img-1{
+    margin-right: -10%;
+    margin-top: -8%;
+    margin-left: 40px;
+}
+
+.img-2 {
+    width: 60% !important;
+    margin-top: -25%;
+}
+
+.bg-gradiente-verde  {
+    background-image: var(--bg-green-gradient-down);
+}
+
+.botao button {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 6px 6px 15px -1px var(--dark-text);
+}
+
+.botao button:hover {
+    background-color: var(--orange);
+    box-shadow: 5px 7px var(--dark-text);
+}
+
+.servicos{
+    color: var(--light-text);
+    margin: 40px 0px;
+    font-size: 18px;
+}
+
+.subtitle {
+    padding: 0px 20%;
+    margin-bottom: 50px;
+}
+
+.servicos h2 {
+    font-size: 50px;
+}
+
+.servicos__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+
+}
+
+.grid__content img {
+    width: 250px;
+}
+
+.grid__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid__content p {
+    margin-top: 30px;
+    margin-bottom: -35%;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.redondo button{
+    background-color: var(--orange);
+    border-radius: 50%;
+    padding: 8px 14px;
+}
+
+.redondo {
+    text-align: right;
+}
