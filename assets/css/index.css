@@ -92,7 +92,7 @@ body {
     margin-bottom: 50px;
 }
 
-.servicos h2 {
+.servicos h2, .review_title h2, .about__content h2 {
     font-size: 50px;
 }
 
@@ -100,7 +100,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: start;
-
 }
 
 .grid__content img {
@@ -128,4 +127,60 @@ body {
 
 .redondo {
     text-align: right;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 25px 0px 10% 0px;
+}
+
+.about__content img {
+    width: 95%;
+    box-shadow: 4px 6px 6px 0px var(--dark-text);
+}
+
+.review__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+}
+
+.review__grid__content {
+    background-image: var(--bg-beige-gradient);
+    width: fit-content;
+    padding: 30px;
+    border-radius: 0px 0px 30px 30px;
+    margin: 0px 30px;
+}
+
+.review__grid__content  img{
+    width: 160px;
+    border-radius: 50%;
+}
+
+.review__grid__content p {
+    font-size: 14px;
+}
+
+.bg-review {
+    background-image: var(--bg-green-gradient-up);
+    margin: 40px 0px;
+    padding-bottom: 60px;
+}
+
+.name {
+    font-size: 18px !important;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.review {
+    margin: 30px 0px;
+}
+
+.bg-perguntas {
+    background-image: url(/assets/images/bg-floresta.png);
 }
