@@ -50,15 +50,17 @@ body {
     box-shadow: 4px 6px 6px 0px var(--dark-text);
 }
 
-.img-1{
-    margin-right: -10%;
-    margin-top: -8%;
-    margin-left: 40px;
+.title__content-img {
+    margin-top: 30px;
+}
+
+.img-1 {
+    margin-right: -80px;
+    margin-left: 30px;
 }
 
 .img-2 {
     width: 60% !important;
-    margin-top: -25%;
 }
 
 .bg-gradiente-verde  {
