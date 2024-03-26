@@ -7,33 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/media-queries.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>trilhas estelares</title>
 </head>
 <body>
+
     <div class="col-md-12 header">
         <div class="container">
             <div class="col-md-12 header-info">
                 <span>TRILHAS ESTELARES</span>
-                <a href="">CONTATO</a>
+                <a onclick="rolarPara('form')">CONTATO</a>
             </div>
         </div>    
     </div>
     
-    <div class="col-md-12">
+    <div class="col-md-12 bg-gradiente-verde">
         <div class="container">
             <div class="col-md-12 title">
                 <h1>Comece sua Aventura de Hiking e Trekking</h1>
             </div>
-        </div>    
-    </div>
-
-       <div class="col-md-12 bg-gradiente-verde">
-        <div class="container">
             <div class="col-md-12 title__content">
                 <div class="col-md-4 title__content-text">
                     <p>Junte-se a nós para uma emocionante aventura de hiking nas majestosas montanhas da região. Nossa trilha guiada oferece uma oportunidade única para explorar a beleza natural, enquanto desafia seus limites pessoais. Prepare-se para experiências inesquecíveis e conexões profundas com a natureza.</p>
                     <div class="botao">
-                        <button>FAÇA O CADASTRO</button>
+                        <button onclick="rolarPara('form')">FAÇA O CADASTRO</button>
                     </div>
                 </div>
                 <div class="col-md-8 title__content-img">
@@ -93,7 +90,7 @@
                     </div>
                 </div>
                 <div class="botao">
-                    <button>CONHEÇA</button>
+                    <button onclick="rolarPara('form')">CONHEÇA</button>
                 </div>
             </div>
         </div>
@@ -109,7 +106,7 @@
                     <h2>Quem somos?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla quaerat nisi reprehenderit voluptate officia ducimus voluptas, odio tenetur, accusamus illo error. Ipsum officiis cum suscipit commodi ut? Necessitatibus, exercitationem.</p>
                     <div class="botao">
-                        <button>SAIBA MAIS</button>
+                        <button onclick="rolarPara('form')">SAIBA MAIS</button>
                     </div>
                 </div>
             </div>
@@ -139,7 +136,7 @@
                 </div>
             </div>
             <div class="col-md-12 botao review">
-                <button>VENHA FAZER PARTE</button>
+                <button onclick="rolarPara('form')">VENHA FAZER PARTE</button>
             </div>
         </div>
     </div>
@@ -171,7 +168,7 @@
                     </div>
                 </div>
                 <div class="botao">
-                    <button>TIRE SUAS DUVIDAS</button>
+                    <button onclick="rolarPara('form')">TIRE SUAS DUVIDAS</button>
                 </div>
             </div>
         </div>
@@ -185,21 +182,25 @@
                     <input type="text" value="" class="cadastro__box" placeholder="NOME COMPLETO">
                     <input type="email" value="" class="cadastro__box" placeholder="EMAIL">
                     <div>
-                        <p class="cadastro__box" >NIVEL DE EXPERIENCIA</p>
-                        <label>
-                          <input type="checkbox" class="radio" value="1" name="fooby[1][]" />INICIANTE</label>
-                        <label>
-                          <input type="checkbox" class="radio" value="1" name="fooby[1][]" />MODERADO</label>
-                        <label>
-                          <input type="checkbox" class="radio" value="1" name="fooby[1][]" />EXPERIENTE</label>
-                      </div>
-                      <input type="submit" value="ENVIAR" class="cadastro__botao">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                NIVEL DE EXPERIENCIA
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><button class="dropdown-item" type="button" onclick="selecionarNivelDeExperiencia('1')">INICIANTE</button></li>
+                                <li><button class="dropdown-item" type="button" onclick="selecionarNivelDeExperiencia('2')">MODERADO</button></li>
+                                <li><button class="dropdown-item" type="button" onclick="selecionarNivelDeExperiencia('3')">EXPERIENTE</button></li>
+                            </ul>                            
+                        </div>
+                    </div>
+                    <input type="hidden" id="nivelDeExperiencia" name="nivelDeExperiencia" value="">
+                    <input type="submit" value="ENVIAR" class="cadastro__botao">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-12 footer">
+    <div class="col-md-12 footer" id="form">
         <div class="footer__left">
             <img src="/assets/images/montanha.png" alt="">
             <p>TRILHAS ESTELARES ©</p>
@@ -215,7 +216,17 @@
         </div>
     </div>
 
-
+    <script>
+        function rolarPara(id) {
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        function selecionarNivelDeExperiencia(nivel) {
+        document.getElementById('nivelDeExperiencia').value = nivel;
+        document.getElementById('dropdownMenuButton').textContent = nivel === '1' ? 'INICIANTE' : nivel === '2' ? 'MODERADO' : 'EXPERIENTE';
+    }
+    </script>
 
 </body>
 </html>

@@ -17,10 +17,20 @@ body {
     font-family: "Work Sans", sans-serif;
     color: var(--dark-text);
     font-size: 18px;
+    padding-top: 50px;
 }
 
 .center {
     text-align: center;
+}
+
+.header{
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-image: url(/assets/images/bg-floresta.png);
+    box-shadow: 0 2px 14px var(--dark-text); 
+    color: var(--light-text);
 }
 
 .header-info {
@@ -28,13 +38,14 @@ body {
 }
 
 .header-info a {
-    color: var(--dark-text);
+    color: var(--light-text);
     text-decoration: none;
     float: right;
 }
 
 .title h1 {
     font-size: 60px;
+    padding-top: 30px;
 }
 
 .title__content{
@@ -229,7 +240,7 @@ body {
     margin: 26px 0px;
 }
 
-.cadastro__box {
+.cadastro__box, button#dropdownMenuButton, .dropdown-menu {
     width: 450px;
     border-radius: 6px;
     border: 1px solid var(--dark-text);
@@ -240,6 +251,15 @@ body {
     color: var(--dark-text);
     font-size: 14px;
     font-weight: 600;
+}
+
+.dropdown-item{
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.dropdown-item:hover{
+    background-color: var(--light-text);
 }
 
 .cadastro {
