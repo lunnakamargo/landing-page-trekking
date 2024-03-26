@@ -43,7 +43,7 @@ body {
     float: right;
 }
 
-.title h1 {
+.title__content-text h1 {
     font-size: 60px;
     padding-top: 30px;
 }
@@ -54,6 +54,7 @@ body {
 
 .title__content-text {
     margin-top: 15px;
+    color: var(--light-text);
 }
 
 .title__content-img img {
@@ -85,12 +86,12 @@ body {
     padding: 10px 20px;
     font-weight: 600;
     letter-spacing: 2px;
-    box-shadow: 5px 6px 8px 0px var(--dark-text);
+    box-shadow: 2px 2px 4px 0px var(--dark-text)
 }
 
 .botao button:hover, .cadastro__botao:hover {
     background-color: var(--orange);
-    box-shadow: 5px 6px 8px 0px var(--light-beige);
+    box-shadow: 2px 2px 4px 0px var(--light-beige);
     color: var(--light-beige);
     transition: 0.3s;
 }
@@ -263,7 +264,7 @@ body {
 }
 
 .cadastro {
-    margin: 50px 0px;
+    margin: 230px 0px;
 }
 
 .cadastro__botao {
