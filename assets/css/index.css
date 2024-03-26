@@ -37,11 +37,33 @@ body {
     margin: 15px 0px;
 }
 
-.header-info a {
-    color: var(--light-text);
-    text-decoration: none;
-    float: right;
+.header-info nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.header-info nav span {
+    cursor: pointer;
+}
+
+.right-header span{
+    margin: 20px;
+}
+
+.header-button{
+    background-color: var(--orange);
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.header-button:hover{
+    background-color: var(--red);
+}
+
 
 .title__content-text h1 {
     font-size: 60px;
@@ -50,6 +72,8 @@ body {
 
 .title__content{
     display: flex;
+   
+    padding-top: 10%;
 }
 
 .title__content-text {
@@ -85,7 +109,6 @@ body {
     border-radius: 6px;
     padding: 10px 20px;
     font-weight: 600;
-    letter-spacing: 2px;
     box-shadow: 2px 2px 4px 0px var(--dark-text)
 }
 
@@ -100,8 +123,8 @@ body {
     color: var(--light-text);
     margin: 15px 0px;
     font-size: 18px;
+   
 }
-
 .subtitle {
     margin-bottom: 50px;
 }
@@ -183,6 +206,7 @@ body {
     background-image: var(--bg-green-gradient-up);
     margin-top: 40px;
     padding-bottom: 60px;
+   
 }
 
 .name {
@@ -201,6 +225,7 @@ body {
     background-repeat: no-repeat; 
     background-size: cover;
     color: var(--light-text);
+   
 }
 
 .perguntas {

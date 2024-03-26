@@ -15,8 +15,19 @@
     <div class="col-md-12 header">
         <div class="container">
             <div class="col-md-12 header-info">
-                <span>TRILHAS ESTELARES</span>
-                <a onclick="rolarPara('form')">CONTATO</a>
+                <nav>
+                    <span onclick="rolarPara('quem_somos')">TRILHAS ESTELARES</span>
+                    <div class="right-header">
+                        <span onclick="rolarPara('servicos')">Serviços</span>
+                        <span onclick="rolarPara('depoimentos')">Depoimentos</span>
+                        <span onclick="rolarPara('perguntas')">FAQ</span>
+                        <span class="header-button" onclick="rolarPara('form')">Reserva</span>
+                    </div>
+                </nav>
+                
+
+               
+                
             </div>
         </div>    
     </div>
@@ -49,41 +60,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 servicos center">
+            <div class="col-md-12 servicos center" id="servicos">
                 <h2>Nossos Serviços</h2>
                 <p class="subtitle">Contamos com uma serie de especialidades para que você tenha uma experiência completa. Guias treinados, roteiros de atividades, refeições e carregadores, tudo isso facilitante sua viagem e deixando a aventura melhor e sem preocupações.</p>
                 <div class="col-md-12 servicos__grid">
                     <div class="grid__content">
                         <img src="/assets/images/urso-mapa.png" alt="">
-                    </div>
-                    <div class="grid__content">
-                        <img src="/assets/images/vendo-passaros.png" alt="">
-                    </div>
-                    <div class="grid__content">
-                        <img src="/assets/images/urso-comendo.png" alt="">
-                    </div>
-                    <div class="grid__content">
-                        <img src="/assets/images/porco.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-
-    <div class="col-md-12">
-        <div class="container">
-            <div class="col-md-12 center">
-                <div class="col-md-12 servicos__grid">
-                    <div class="grid__content">
                         <p>Guia Profissional </p>
                     </div>
                     <div class="grid__content">
+                        <img src="/assets/images/vendo-passaros.png" alt="">
                         <p>Atividades Outdoor</p>
                     </div>
                     <div class="grid__content">
+                        <img src="/assets/images/urso-comendo.png" alt="">
                         <p>Refeições Inclusas </p>
                     </div>
                     <div class="grid__content">
+                        <img src="/assets/images/porco.png" alt="">
                         <p>Carregadores de Equipamentos</p>
                     </div>
                 </div>
@@ -92,11 +86,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <div class="col-md-12">
+    <div class="col-md-12 about">
         <div class="container">
-            <div class="col-md-12 about__container">
+            <div class="col-md-12 about__container" id="quem_somos">
                 <div class="col-md-6 about__content">
                     <img src="/assets/images/man-backpack.jpg" alt="" class="rounded">
                 </div>
@@ -108,14 +102,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 review_title center">
-                <h2>Depoimentos</h2>
-            </div>
         </div>
     </div>
 
     <div class="col-md-12 bg-review center">
         <div class="container">
+            <div class="col-md-12 review_title center" id="depoimentos">
+                <h2>Depoimentos</h2>
+            </div>
             <div class="col-md-12 review__grid-container">
                 <div class="col-md-4 review__grid__content">
                     <img src="/assets/images/mulher.jpg" alt="">
@@ -141,7 +135,7 @@
 
     <div class="col-md-12 bg-perguntas center">
         <div class="container">
-            <div class="col-md-12 perguntas">
+            <div class="col-md-12 perguntas" id="perguntas">
                 <h2>Perguntas Frequentes</h2>
                 <div class="col-md-12 perguntar__card-container">
                     <div class="perguntas__card">
@@ -172,7 +166,7 @@
         </div>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 ">
         <div class="container">
             <div class="col-md-12 cadastro center">
                 <h2>Reserve sua vaga </h2>
