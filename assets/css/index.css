@@ -68,12 +68,13 @@ body {
 .title__content-text h1 {
     font-size: 60px;
     padding-top: 30px;
+    text-shadow: 4px 2px 6px var(--dark-text);
 }
 
 .title__content{
     display: flex;
-   
     padding-top: 10%;
+    height: 85vh;
 }
 
 .title__content-text {
@@ -92,11 +93,12 @@ body {
 
 .img-1 {
     margin-right: -80px;
-    margin-left: 30px;
+    margin-left: 9px;
+    width: 59%;
 }
 
 .img-2 {
-    width: 60% !important;
+    width: 64% !important;
 }
 
 .bg-gradiente-verde  {
@@ -120,10 +122,10 @@ body {
 }
 
 .servicos{
+    height: 100vh;
+    padding-top: 10%;
     color: var(--light-text);
-    margin: 15px 0px;
     font-size: 18px;
-   
 }
 .subtitle {
     margin-bottom: 50px;
@@ -151,11 +153,15 @@ body {
 }
 
 .grid__content p {
-    color: var(--dark-text);
-    font-weight: 600;
-    margin-top: 40px;
+    font-weight: 100;
+    margin-top: 0px;
+    padding: 0px 30px;
 }
 
+.grid_title{
+    font-weight: 600 !important;
+    margin-top: 60px !important;
+}
 .redondo button{
     background-color: var(--orange);
     border-radius: 50%;
@@ -170,13 +176,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-end;
-    margin: 25px 0px 10% 0px;
+    align-items: center;
+    height: 100vh;
 }
 
 .about__content img {
     width: 95%;
     box-shadow: 4px 6px 6px 0px var(--dark-text);
+}
+
+.about__content {
+    padding: 15px;
 }
 
 .review__grid-container {
@@ -189,7 +199,7 @@ body {
     background-image: var(--bg-beige-gradient);
     width: fit-content;
     padding: 30px;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 6px;
     margin: 0px 30px;
 }
 
@@ -198,15 +208,10 @@ body {
     border-radius: 50%;
 }
 
-.review__grid__content p {
-    font-size: 14px;
-}
-
 .bg-review {
     background-image: var(--bg-green-gradient-up);
-    margin-top: 40px;
-    padding-bottom: 60px;
-   
+    padding-top: 4%;
+    height: 100vh;
 }
 
 .name {
@@ -219,18 +224,18 @@ body {
     margin: 30px 0px;
 }
 
+.review_title{
+    color: var(--light-text);
+}
+
 .bg-perguntas {
     background-image: url(/assets/images/bg-floresta.png);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
     color: var(--light-text);
-   
-}
-
-.perguntas {
-    padding-top: 8%;
-    padding-bottom: 8%;
+    height: 100vh;
+    padding-top: 7%;
 }
 
 .perguntas__card {
@@ -289,7 +294,8 @@ body {
 }
 
 .cadastro {
-    margin: 230px 0px;
+    height: 85vh;
+    padding-top: 10%;
 }
 
 .cadastro__botao {
@@ -340,4 +346,12 @@ body {
 
 ::placeholder{
     color: var(--dark-text);
+}
+
+.carousel-inner {
+    padding: 23px;
+}
+
+.w-100 {
+    border-radius: 6px;
 }

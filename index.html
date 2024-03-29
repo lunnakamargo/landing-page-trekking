@@ -35,14 +35,14 @@
     <div class="col-md-12 bg-gradiente-verde ">
         <div class="container">
             <div class="col-md-12 title__content">
-                <div class="col-md-4 title__content-text">
+                <div class="col-md-5 title__content-text">
                     <h1>Comece sua Aventura de Hiking e Trekking</h1>
                     <p>Junte-se a nós para uma emocionante aventura de hiking nas majestosas montanhas da região. Nossa trilha guiada oferece uma oportunidade única para explorar a beleza natural, enquanto desafia seus limites pessoais. Prepare-se para experiências inesquecíveis e conexões profundas com a natureza.</p>
                     <div class="botao">
                         <button onclick="rolarPara('form')">FAÇA O CADASTRO</button>
                     </div>
                 </div>
-                <div class="col-md-8 title__content-img">
+                <div class="col-md-7 title__content-img">
                     <div class="row">
                         <div class="col-md-6 mb-4 img-1">
                             <img src="/assets/images/backpack-alone.jpeg" class="rounded">
@@ -66,19 +66,24 @@
                 <div class="col-md-12 servicos__grid">
                     <div class="grid__content">
                         <img src="/assets/images/urso-mapa.png" alt="">
-                        <p>Guia Profissional </p>
+                        <p class="grid_title">Guia Profissional </p>
+                        <p >Nossa equipe de guias profissionais tem experiência em atividades ao ar livre e profundo conhecimento do ambiente natural.</p>
+                        
                     </div>
                     <div class="grid__content">
                         <img src="/assets/images/vendo-passaros.png" alt="">
-                        <p>Atividades Outdoor</p>
+                        <p class="grid_title">Atividades Outdoor</p>
+                        <p >Desde caminhadas por trilhas até escaladas em rochas, nossas atividades são planejadas para todos os níveis de habilidade.</p>
                     </div>
                     <div class="grid__content">
                         <img src="/assets/images/urso-comendo.png" alt="">
-                        <p>Refeições Inclusas </p>
+                        <p class="grid_title">Refeições Inclusas </p>
+                        <p >Oferecemos refeições nutritivas e saborosas incluídas em todos os nossos pacotes.</p>
                     </div>
                     <div class="grid__content">
                         <img src="/assets/images/porco.png" alt="">
-                        <p>Carregadores de Equipamentos</p>
+                        <p class="grid_title">Carregadores</p>
+                        <p >Nossos carregadores são treinados e equipados para transportar sua bagagem e equipamentos de camping de forma segura e eficiente.</p>
                     </div>
                 </div>
                 <div class="botao">
@@ -92,8 +97,38 @@
         <div class="container">
             <div class="col-md-12 about__container" id="quem_somos">
                 <div class="col-md-6 about__content">
-                    <img src="/assets/images/man-backpack.jpg" alt="" class="rounded">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="/assets/images/man-backpack.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/assets//images/6.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/assets/images/pexels-andrei-tanase-1271619.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/assets/images/4.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/assets/images/1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/assets/images/3.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="col-md-6 about__content">
                     <h2>Quem somos?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla quaerat nisi reprehenderit voluptate officia ducimus voluptas, odio tenetur, accusamus illo error. Ipsum officiis cum suscipit commodi ut? Necessitatibus, exercitationem.</p>
@@ -105,9 +140,9 @@
         </div>
     </div>
 
-    <div class="col-md-12 bg-review center">
+    <div class="col-md-12 bg-review center" id="depoimentos">
         <div class="container">
-            <div class="col-md-12 review_title center" id="depoimentos">
+            <div class="col-md-12 review_title center">
                 <h2>Depoimentos</h2>
             </div>
             <div class="col-md-12 review__grid-container">
@@ -133,9 +168,9 @@
         </div>
     </div>
 
-    <div class="col-md-12 bg-perguntas center">
+    <div class="col-md-12 bg-perguntas center" id="perguntas">
         <div class="container">
-            <div class="col-md-12 perguntas" id="perguntas">
+            <div class="col-md-12 perguntas">
                 <h2>Perguntas Frequentes</h2>
                 <div class="col-md-12 perguntar__card-container">
                     <div class="perguntas__card">
@@ -166,9 +201,9 @@
         </div>
     </div>
 
-    <div class="col-md-12 ">
+    <div class="col-md-12 cadastro">
         <div class="container">
-            <div class="col-md-12 cadastro center">
+            <div class="col-md-12 cadastro_container center">
                 <h2>Reserve sua vaga </h2>
                 <div class="cadastro__inputs">
                     <input type="text" value="" class="cadastro__box" placeholder="NOME COMPLETO">
