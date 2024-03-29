@@ -68,7 +68,6 @@ body {
 .title__content-text h1 {
     font-size: 60px;
     padding-top: 30px;
-    text-shadow: 4px 2px 6px var(--dark-text);
 }
 
 .title__content{
@@ -131,7 +130,7 @@ body {
     margin-bottom: 50px;
 }
 
-.servicos h2, .review_title h2, .about__content h2, .perguntas h2, .cadastro h2 {
+.servicos h2, .review_title h2, .about__content h2, .perguntas h2 {
     font-size: 50px;
 }
 
@@ -293,10 +292,6 @@ body {
     background-color: var(--light-text);
 }
 
-.cadastro {
-    height: 85vh;
-    padding-top: 10%;
-}
 
 .cadastro__botao {
     margin: 10px 0;
@@ -354,4 +349,57 @@ body {
 
 .w-100 {
     border-radius: 6px;
+}
+
+.cadastro_container.center {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cadastro_text {
+    text-align: left;
+}
+
+.cadastro_text p.title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+iframe {
+    width: 323px;
+    height: 200px;
+    margin-right: -10px;
+}
+
+.col-md-6.cadastro_form {
+    width: fit-content;
+    padding: 30px 25px;
+    border-radius: 6px;
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    box-shadow: 4px 6px 6px 0px var(--dark-text);
+}
+
+.cadastro {
+    height: 85vh;
+    padding-top: 8%;
+}
+
+input.cadastro__botao {
+    width: 100%;
+}
+
+.cadastro h2 {
+    font-size: 35px;
+    text-align: left;
 }
