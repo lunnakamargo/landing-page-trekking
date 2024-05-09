@@ -24,12 +24,20 @@
                         <span class="header-button" onclick="rolarPara('form')">Reserva</span>
                     </div>
                 </nav>
-                
-
-               
-                
             </div>
         </div>    
+    </div>
+
+    <button class="open-btn" onclick="openNav()">☰</button>
+
+    <!-- Menu lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#quem_somos" onclick="rolarPara('quem_somos')">Quem Somos</a>
+        <a href="#servicos" onclick="rolarPara('servicos')">Serviços</a>
+        <a href="#depoimentos" onclick="rolarPara('depoimentos')">Depoimentos</a>
+        <a href="#perguntas" onclick="rolarPara('perguntas')">FAQ</a>
+        <a href="#form" onclick="rolarPara('form')">Reserva</a>
     </div>
     
     <div class="col-md-12 bg-gradiente-verde ">
@@ -264,6 +272,14 @@
         document.getElementById('nivelDeExperiencia').value = nivel;
         document.getElementById('dropdownMenuButton').textContent = nivel === '1' ? 'INICIANTE' : nivel === '2' ? 'MODERADO' : 'EXPERIENTE';
     }
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
     </script>
 
 </body>
